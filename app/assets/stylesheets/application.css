@@ -12,7 +12,32 @@
  *= require_tree .
  */
 
-.footer_img {
+.footerimg {
 	width: 32px;
-	height: 32px;
+	height: 32px
+}
+
+.desaturate {
+	transition-duration:400ms
+}
+
+.desaturate:hover {
+	filter:grayscale(100%);
+	-webkit-filter:grayscale(100%);
+	-moz-filter:grayscale(100%);
+	-ms-filter:grayscale(100%);
+	-o-filter:grayscale(100%);
+	filter:url(desaturate.svg#greyscale);
+	filter:gray;-webkit-filter:grayscale(1)
+}
+
+.footer {
+	padding:10px 0;
+	background:#000;
+	background-color:#000;
+	text-align:center;
+	font-size:10px;
+	color:#fff;
+	position:relative;
+	clear:both
 }
