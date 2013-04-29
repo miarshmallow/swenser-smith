@@ -6,20 +6,29 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-
-<body class="container">
-
-<%= yield %>
-
-  <div class="footer">
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" >
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="#">Amelia's World Photography</a>
+                <ul class="nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Albums</a></li>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container well">
+        <%= yield %>
+    </div>
+  <div class="navbar navbar-fixed-bottom footer">
     <p>Amelia - Copyright &copy; 2010 - 2013</p>
-
-      <%= link_to image_tag('facebook.png', :class => "footerimg"), url_for("https://www.facebook.com/amelia.swensersmith"), :class => "desaturate" %>
-      <%= link_to image_tag('googleplus.png', :class => "footerimg"), url_for("https://www.facebook.com/amelia.swensersmith"), :class => "desaturate" %>
-      <%= link_to image_tag('linkedin.png', :class => "footerimg"), url_for("http://au.linkedin.com/pub/amelia-swenser-smith/28/9aa/831"), :class => "desaturate" %>
-      <%= link_to image_tag('twitter.png', :class => "footerimg"), url_for("https://twitter.com/#!/miarshmallow"), :class => "desaturate" %>
-
+    <%= link_to image_tag('facebook.png', :class => "footerimg"), url_for("https://www.facebook.com/amelia.swensersmith"), :class => "desaturate" %>
+    <%= link_to image_tag('googleplus.png', :class => "footerimg"), url_for("https://www.facebook.com/amelia.swensersmith"), :class => "desaturate" %>
+    <%= link_to image_tag('linkedin.png', :class => "footerimg"), url_for("http://au.linkedin.com/pub/amelia-swenser-smith/28/9aa/831"), :class => "desaturate" %>
+    <%= link_to image_tag('twitter.png', :class => "footerimg"), url_for("https://twitter.com/#!/miarshmallow"), :class => "desaturate" %>
   </div>
-
 </body>
 </html>

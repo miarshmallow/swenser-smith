@@ -12,6 +12,18 @@
  *= require_tree .
  */
 
+body {
+	padding: 50px;
+}
+
+.footer {
+	padding: 10px 0;
+	text-align: center;
+	font-size: 10px;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
 .footerimg {
 	width: 32px;
 	height: 32px
@@ -29,15 +41,4 @@
 	-o-filter:grayscale(100%);
 	filter:url(desaturate.svg#greyscale);
 	filter:gray;-webkit-filter:grayscale(1)
-}
-
-.footer {
-	padding:10px 0;
-	background:#000;
-	background-color:#000;
-	text-align:center;
-	font-size:10px;
-	color:#fff;
-	position:relative;
-	clear:both
 }
