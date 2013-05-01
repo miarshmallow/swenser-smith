@@ -1,5 +1,9 @@
 SwenserSmith::Application.routes.draw do
-  resources :albums
+  resources :photo_albums
+
+  resources :photo_albums
+
+  root :to => "photo_albums#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
